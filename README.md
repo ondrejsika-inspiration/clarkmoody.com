@@ -1,2 +1,2 @@
-# clarkmoody.com
-Personal Website
+# Clark Moody dot com
+My personal website
