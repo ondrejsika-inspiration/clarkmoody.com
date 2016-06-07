@@ -1,0 +1,156 @@
+/*
+   Reset!
+
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset. */
+
+
+
+body {
+	color: #333;
+	background-color: #fff;
+	font: 16px/1.0em Georgia, serif;
+}
+#header {
+	padding: 30px 0 30px 0;
+}
+#header a {
+	display: block;
+	width: 940px;
+	height: 126px;
+	background: transparent url('../img/header.png') -10px 0 no-repeat;
+}
+#header a span {
+	display: none;
+}
+
+.portrait {
+	width: 940px;
+	height: 627px;
+	background: transparent url('../img/ClarkMoody.jpg') 0 0 no-repeat;
+}
+h1 {
+	font-size: 1.65em;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #232323;
+	cursor: default;
+	margin: 1.46em 0 1.5em 0;
+	padding: 0 0 0.5em 0;
+	border-bottom: 4px solid #933;
+}
+h2 {}
+h3 {
+	font: 1.33em/1.0em Helvetica, Arial, sans-serif;
+	color: #232323;
+	border-bottom: 1px solid #933;
+	padding-bottom: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+p {
+	margin-bottom: 1.5em;
+	line-height: 1.5em;
+	font-size: 16px;
+}
+.bodycopy p {
+	text-align: justify;
+}
+
+a {
+	text-decoration: underline;
+	color: #339;
+}
+a:visited {
+	color: #000;
+}
+a:hover {}
+a:active, a:focus {}
+
+strong {
+	font-weight: bold;
+}
+em {
+	color: #933;
+	font-style: italic;
+}
+
+.photonote {
+	text-align: right;
+	font-size: 0.7em;
+	font-style: italic;
+	color: #999;
+	line-height: 1.0em;
+	margin-top: 0.5em;
+	cursor: default;
+}
+.tiny {
+	font: 0.75em/1.0em Helvetica, Arial, sans-serif;
+}
+
+.footer {
+	border-top: 4px solid #933;
+	margin-top: 1.0em;
+}
+.footer p {
+	text-align: right;
+	font-size: 0.9em;
+	margin: 0.5em 0 5.0em 0;
+}
+
+/* dppx: Dots per pixel. 96dpi = 1dppx */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 1.5dppx) { 
+    #header a {
+		background-image: url('../img/header@2x.png');
+		background-size: 940px 126px;
+	}
+	.portrait {
+		background: url('../img/ClarkMoody@2x.jpg');
+		background-size: 940px 627px;
+	}
+}
